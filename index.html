@@ -231,7 +231,7 @@
                                         let diff = targetDate4 - now;
   
                                         if (diff <= 0) {
-                                        document.querySelector("#countdown-happenning").innerHTML = "Ngày GPMN/QTLĐ (30/04-01/05)";
+                                        document.querySelector("#countdown-happenning").innerHTML = "Ngày Quốc tế Tình Yêu (07/05";
                                         return;
                                         }
   
@@ -240,10 +240,10 @@
 										let minutes = Math.floor(diff / 1000 / 60) % 60;
 										let seconds = Math.floor(diff / 1000) % 60;
   
-										document.querySelector("#countdown-happenning").innerHTML = "Chưa Có Sự Kiện";
+										document.querySelector("#countdown-happenning").innerHTML = "Ngày GPMN/QTLĐ (30/04-01/05)";
 									}
   
-									let targetDate4 = new Date(2024, 3, 30, 0, 0, 0);
+									let targetDate4 = new Date(2024, 6, 5, 0, 0, 0);
 									updateCountdown(targetDate4);
 									setInterval(() => {
 										updateCountdown(targetDate4);
