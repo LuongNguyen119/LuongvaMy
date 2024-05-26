@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-right: 30px;
   padding-bottom: 2px;
   margin-top: 5em;
-  margin-bottom: 25em;
+  margin-bottom: 26em;
   width: 60px;
 
 }
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .avatar-container, .heart
 {
-  padding-top: 130px;
+  padding-top: 150px;
   display: block;
   justify-content: center;
   text-align: center;
@@ -426,8 +426,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .date-text-time
 {
   justify-content: center;
-  margin-top: -240px;
-  margin-bottom: 100px;
+  margin-top: -270px;
+  margin-bottom: 150px;
   text-align: center;
 }
 .text-firstly {
