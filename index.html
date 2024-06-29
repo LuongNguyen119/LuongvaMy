@@ -129,13 +129,12 @@
 									<p langKey="row-text-date"><a class="today">Hôm nay</a> <a><span style=" font-weight: bold;" id="nuitime"></span></a></p>
 								</div>
 								<div class="animate-box">
-<!-- 								<h3 langKey="kyniem-top"><a class="kyniem">Text Sự Kiện</a></h3>
-								<h3 langKey="kyniem-text1"><a class="text-kyniem">- $NULL </a></h3> -->
-								<h3 langKey="kyniem-top"><a class="kyniem">Kỷ Niệm Tròn 100 Ngày Anh và Em Yêu Nhau</a></h3>
-								<h3 langKey="kyniem-text1"><a class="text-kyniem">Vậy là chính thức Anh và Em đã bên nhau được tròn 100 Ngày,</a></h3>
-							        <h3 langKey="kynem-text2"><a class="text-kyniem">Trong thời gian vừa qua anh và em đã không ít lần cãi nhau, giận dỗi nhau, nhưng vẫn không bỏ nhau và vẫn tiếp tục đến bây giờ. Cảm ơn em vì đã bên cạnh và yêu thương anh suốt thời gian vừa qua. Chúc mừng kỷ niệm của chúng ta. Anh và em sẽ thật hạnh phúc, mãi yêu em! </a></h3>
-								<h3 langKey="kynem-text2"><a class="text-kyniem">Mỗi ngày trôi qua, tình yêu của chúng ta lại lớn thêm một chút. Chúc mừng kỷ niệm 2 tháng yêu nhau của 2 chúng ta. Hy vọng Anh sẽ cùng Em tiếp tục chặng đường phía trước. Em yêu Anh nhìu lắm ♥ ♥ ♥</a></h3>
-								<h3><a class="date-kyniem">15/3/2024 - 23-25/6/2024</a></h3>
+								<!-- <h3 langKey="kyniem-top"><a class="kyniem">Text Sự Kiện</a></h3>
+								<h3 langKey="kyniem-text1"><a class="text-kyniem">- $NULL </a></h3>
+								<h3 langKey="kyniem-top"><a class="kyniem">Kỷ Niệm Tròn 1 Tháng Anh và Em Yêu Nhau</a></h3>
+								<h3 langKey="kyniem-text1"><a class="text-kyniem">Vậy là chính thức Anh và Em đã bên nhau được tròn 1 tháng, và Anh cảm ơn Em đã đến bên Anh luôn luôn bên Anh, Mãi Iu Cô Bé Của Anh <3<3 </a></h3>
+								<h3 langKey="kynem-text2"><a class="text-kyniem">Mỗi ngày trôi qua, tình yêu của chúng ta lại lớn thêm một chút. Chúc mừng kỷ niệm 1 tháng yêu nhau của 2 chúng ta. Hy vọng Em sẽ cùng Anh tiếp tục chặng đường phía trước. Anh yêu Em, Cô Bé đáng iu của Anh ♥ ♥ ♥</a></h3>
+								<h3><a class="date-kyniem">15/3/2024 - 15/4/2024</a></h3> -->
 								</div>
 								<div class="animate-box">
 								<h2><a class="info-fb" href="https://www.facebook.com/luongnguyenproducer">Lương Nguyễn</a><a class="heart-info">❤</a><a class="info-fb" href="https://www.facebook.com/nghoangmy05">Nguyễn Hoàng My</a></h2>
@@ -204,7 +203,7 @@
                                         let diff = targetDate3 - now;
   
                                         if (diff <= 0) {
-                                        document.querySelector("#countdown-took-place").innerHTML = "Ngày Quốc tế Thiếu nhi (01/06)";
+                                        document.querySelector("#countdown-took-place").innerHTML = "Kỷ Niệm 100 Ngày Yêu Nhau (23/6-1/7)";
                                         return;
                                         }
   
@@ -216,7 +215,7 @@
 										document.querySelector("#countdown-took-place").innerHTML = "Ngày Quốc tế Thiếu nhi (01/06)";
 									}
   
-									let targetDate3 = new Date(2024, 5, 23, 0, 0, 0);
+									let targetDate3 = new Date(2024, 6, 3, 0, 0, 0);
 									updateCountdown(targetDate3);
 									setInterval(() => {
 										updateCountdown(targetDate3);
@@ -225,14 +224,15 @@
 								</div>
 								<div class="event-happenning">
 									<li><a class="event-happenning-text">Sự Kiện Đang Diễn Ra</a></li>
-									<li class="event-happenning-ev" id="countdown-happenning"><a>$Null</a></li>
+									<li class="event-happenning-ev" id="countdown-happenning"><a>$Null</a> </li><a class="event-happenning-text-count" id="countdown-event1"></a>
+									
 									<script>
 										function updateCountdown(targetDate4) {
                                         let now = new Date();
                                         let diff = targetDate4 - now;
   
                                         if (diff <= 0) {
-                                        document.querySelector("#countdown-happenning").innerHTML = "Kỷ Niệm 100 Ngày Yêu Nhau (23-24/06)";
+                                        document.querySelector("#countdown-happenning").innerHTML = "Ngày Sinh Nhật Anh Iu (02/07)";
                                         return;
                                         }
   
@@ -241,15 +241,43 @@
 										let minutes = Math.floor(diff / 1000 / 60) % 60;
 										let seconds = Math.floor(diff / 1000) % 60;
   
-										document.querySelector("#countdown-happenning").innerHTML = "Chưa có sự kiện";
+										document.querySelector("#countdown-happenning").innerHTML = "Kỷ Niệm 100 Ngày Yêu Nhau (23/6-1/7)";
 									}
   
-									let targetDate4 = new Date(2024, 5, 23, 0, 0, 0);
+									let targetDate4 = new Date(2024, 6, 2, 0, 0, 0);
 									updateCountdown(targetDate4);
 									setInterval(() => {
 										updateCountdown(targetDate4);
 									}, 1000);
 									</script>
+				
+									<script>
+									function updateCountdown(targetDate6) {
+									  let now = new Date();
+									  let diff = targetDate6 - now;
+									
+									  if (diff <= 0) {
+										document.querySelector("#countdown-event1").innerHTML = "null";
+										return;
+									  }
+									
+									  let days = Math.floor(diff / 1000 / 60 / 60 / 24);
+									  let hours = Math.floor(diff / 1000 / 60 / 60) % 24;
+									  let minutes = Math.floor(diff / 1000 / 60) % 60;
+									  let seconds = Math.floor(diff / 1000) % 60;
+									
+									  document.querySelector("#countdown-event1").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+									}
+									
+									let targetDate6 = new Date(2024, 6, 1, 0, 0, 0);
+									updateCountdown(targetDate6);
+									setInterval(() => {
+									  updateCountdown(targetDate6);
+									}, 1000);
+									</script>
+								</div>
+								<div>
+									
 								</div>
 								<div class="event-upcoming">
 									<li><a class="event-upcoming-text">Sự Kiện Sắp Diễn Ra</a></li>
@@ -260,7 +288,7 @@
                                         let diff = targetDate5 - now;
   
                                         if (diff <= 0) {
-                                        document.querySelector("#countdown-upcoming").innerHTML = "Ngày Sinh Nhật Anh Iu (02/07)";
+                                        document.querySelector("#countdown-upcoming").innerHTML = "Ngày Quốc Khánh (02/09)";
                                         return;
                                         }
   
@@ -269,10 +297,10 @@
 										let minutes = Math.floor(diff / 1000 / 60) % 60;
 										let seconds = Math.floor(diff / 1000) % 60;
   
-										document.querySelector("#countdown-upcoming").innerHTML = "Kỷ Niệm 100 Ngày Yêu Nhau (23/06)";
+										document.querySelector("#countdown-upcoming").innerHTML = "Ngày Sinh Nhật Anh Iu (02/07)";
 									}
   
-									let targetDate5 = new Date(2024, 5, 23, 0, 0, 0);
+									let targetDate5 = new Date(2024, 6, 3, 0, 0, 0);
 									updateCountdown(targetDate5);
 									setInterval(() => {
 										updateCountdown(targetDate5);
