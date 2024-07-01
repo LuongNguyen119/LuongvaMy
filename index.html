@@ -203,7 +203,7 @@
                                         let diff = targetDate3 - now;
   
                                         if (diff <= 0) {
-                                        document.querySelector("#countdown-took-place").innerHTML = "Kỷ Niệm 100 Ngày Yêu Nhau (23/6-1/7)";
+                                        document.querySelector("#countdown-took-place").innerHTML = "gày Sinh Nhật Anh Iu (02/07)";
                                         return;
                                         }
   
@@ -212,7 +212,7 @@
 										let minutes = Math.floor(diff / 1000 / 60) % 60;
 										let seconds = Math.floor(diff / 1000) % 60;
   
-										document.querySelector("#countdown-took-place").innerHTML = "Ngày Quốc tế Thiếu nhi (01/06)";
+										document.querySelector("#countdown-took-place").innerHTML = "Kỷ Niệm 100 Ngày Yêu Nhau (23/6-1/7)";
 									}
   
 									let targetDate3 = new Date(2024, 6, 3, 0, 0, 0);
@@ -225,6 +225,7 @@
 								<div class="event-happenning">
 									<li><a class="event-happenning-text">Sự Kiện Đang Diễn Ra</a></li>
 									<li class="event-happenning-ev" id="countdown-happenning"><a>$Null</a> </li><a class="event-happenning-text-count" id="countdown-event1"></a>
+									<br><a class="event-happenning-text-count">7d 0h 0m</a>
 									
 									<script>
 										function updateCountdown(targetDate4) {
@@ -241,7 +242,7 @@
 										let minutes = Math.floor(diff / 1000 / 60) % 60;
 										let seconds = Math.floor(diff / 1000) % 60;
   
-										document.querySelector("#countdown-happenning").innerHTML = "Kỷ Niệm 100 Ngày Yêu Nhau (23/6-1/7)";
+										document.querySelector("#countdown-happenning").innerHTML = "Chưa có sự kiện";
 									}
   
 									let targetDate4 = new Date(2024, 6, 2, 0, 0, 0);
@@ -257,7 +258,7 @@
 									  let diff = targetDate6 - now;
 									
 									  if (diff <= 0) {
-										document.querySelector("#countdown-event1").innerHTML = "null";
+										document.querySelector("#countdown-event1").innerHTML = "3d 0h 0m";
 										return;
 									  }
 									
@@ -266,10 +267,10 @@
 									  let minutes = Math.floor(diff / 1000 / 60) % 60;
 									  let seconds = Math.floor(diff / 1000) % 60;
 									
-									  document.querySelector("#countdown-event1").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+									  document.querySelector("#countdown-event1").innerHTML = `${days}d ${hours}h ${minutes}m`;
 									}
 									
-									let targetDate6 = new Date(2024, 6, 1, 0, 0, 0);
+									let targetDate6 = new Date(2024, 6, 5, 0, 0, 0);
 									updateCountdown(targetDate6);
 									setInterval(() => {
 									  updateCountdown(targetDate6);
